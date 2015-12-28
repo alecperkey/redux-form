@@ -10,9 +10,9 @@
     "dev": "node ./node_modules/better-npm-run dev",
     "clean": "rimraf dist",
     "lint": "eslint src",
-    "prepublish": "npm run lint && npm run clean && npm test && npm run build",
+    "prepublish": "npm run lint && npm run clean && npm run test && npm run build",
     "publish": "npm run prepublish && git add -f dist/* && git commit -m \"publishing\" && git push origin gh-pages",
-    "test": "mocha --compilers js:babel/register --recursive 'src/**/__tests__/*'"
+    "test": "mocha --compilers js:babel/register --recursive src/**/__tests__/*"
   },
   "keywords": [
     "react",
